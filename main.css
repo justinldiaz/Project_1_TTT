@@ -1,1 +1,22 @@
-/* Style Sheet */
+#board {
+  width: 31em;
+  height: 30em;
+  margin-right: auto;
+  margin-left: auto;
+  top: 30px;
+  left: 25%;
+  text-align: center;
+}
+
+.box {
+  width: 10em;
+  height: 10em;
+  border: 1px solid black;
+  display: inline-block;
+  margin-bottom: 4px;
+  background-size: auto;
+  background-position: center; 
+}
+body {
+  text-align: center;
+}
