@@ -48,14 +48,14 @@
 
     
     Game.prototype.winnerIs = function winnerIs(player) {
-      return allThree(player, squareValue('0'), squareValue('1'), squareValue('2')) ||
-             allThree(player, squareValue('3'), squareValue('4'), squareValue('5')) ||
-             allThree(player, squareValue('6'), squareValue('7'), squareValue('8')) ||
-             allThree(player, squareValue('0'), squareValue('3'), squareValue('6')) ||
-             allThree(player, squareValue('1'), squareValue('4'), squareValue('7')) ||
-             allThree(player, squareValue('2'), squareValue('5'), squareValue('8')) ||
-             allThree(player, squareValue('0'), squareValue('4'), squareValue('8')) ||
-             allThree(player, squareValue('2'), squareValue('4'), squareValue('6'));
+      return allThree(player, "#box1", "#box2", "#box3") ||
+             allThree(player, "#box4", "#box5", "#box6") ||
+             allThree(player, "#box7", "#box8", "#box9") ||
+             allThree(player, "#box1", "#box4", "#box7") ||
+             allThree(player, "#box2", "#box5", "#box8") ||
+             allThree(player, "#box3", "#box6", "#box9") ||
+             allThree(player, "#box1", "#box5", "#box9") ||
+             allThree(player, "#box3", "#box5", "#box7");
       };
     function allThree(player, squareOne, squareTwo, squareThree) {
       if ((squareOne[0] === player) && (squareTwo[0] === player) && (squareThree[0] === player))
